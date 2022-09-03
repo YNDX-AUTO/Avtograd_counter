@@ -49,6 +49,7 @@ def message(text: str) -> None:
     data = {'chat_id': CHAT,
             'text': text
             }
+    print(text)
     requests.post(URL, data=data)
 
 
